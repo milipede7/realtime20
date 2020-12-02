@@ -2,13 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <script language ="javascript" type="text/javascript" src="jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-if($(window).width() <= 788) {
-window.location = "phoneindex.html";
-}
-});
-</script>
     <link rel="icon" href="flake.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,33 +10,17 @@ window.location = "phoneindex.html";
   </head>
   <body>
 
-    <!-- <video poster="flake2.jpg" autoplay muted id="myVideo">
-      <source src="backvid3.mp4" type="video/mp4">
-    </video>
-
-    <script>
-         document.getElementById('myVideo').addEventListener('ended',myHandler,false);
-        function myHandler(e) {
-            if(!e) { e = window.event; }
-            // What you want to do after the event
-            document.getElementById('myVideo').style.display="none";
-            document.getElementById('videoEnd').style.display="block";
-          }
-      </script> -->
-
     <div class="vimeo-wrapper">
-       <iframe id="myVideo" src="https://player.vimeo.com/video/486280257?background=1&autoplay=1&loop=0&autopause=1"
+       <iframe id="phonemyVideo" src="https://player.vimeo.com/video/486280257?background=1&autoplay=1&loop=0&autopause=1"
                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 
-    <!-- <div id="videoEnd" style="display:none"></div> -->
-
     <div id="titlecont">
-     <img id="title" src="title.png" alt="twitch killed the irl realtime star">
+     <img id="phonetitle" src="title.png" alt="twitch killed the irl realtime star">
    </div>
 
-     <div id="twitch">
-      ↓ Event Live Stream ↓
+     <div id="phonetwitch">
+      Event Live Stream ↓
      </div>
 
 <!-- https://dev.twitch.tv/docs/embed/everything -->
@@ -52,7 +29,7 @@ window.location = "phoneindex.html";
      <script src="https://embed.twitch.tv/embed/v1.js"></script>
      <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
-        width: '100%',
+        width: 854,
         height: 480,
         channel: "realtimedotparty",
         // only needed if your site is also embedded on embed.example.com and othersite.example.com
@@ -61,7 +38,7 @@ window.location = "phoneindex.html";
     </script>
     </div>
 
-     <div id="names">
+     <div id="phonenames">
 
        <a href="https://www.youtube.com/channel/UCGy9ccNYRbcT6fvRa7NuHMg" target="_blank">Emma Aguilera</a><br>
        <a href="https://www.instagram.com/la.chap/" target="_blank">LA. Chap</a><br>
