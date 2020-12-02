@@ -9,12 +9,26 @@
 }
 
 body {
-  background-color: lightblue;
+
+  /* background: rgb(228,204,238);
+background: linear-gradient(135deg, rgba(228,204,238,1) 5%, rgba(255,244,204,1) 25%, rgba(216,201,241,1) 69%); */
+  /* background: rgb(34,193,195);
+background: radial-gradient(circle, rgba(34,193,195,1) 74%, rgba(253,187,45,1) 100%); */
+  /* background: rgb(228,204,238);
+background: linear-gradient(135deg, rgba(228,204,238,1) 5%, rgba(204,255,209,1) 25%, rgba(216,201,241,1) 69%); */
+  /* background: rgb(228,204,238);
+background: linear-gradient(135deg, rgba(228,204,238,1) 5%, rgba(179,228,240,1) 15%, rgba(204,255,209,1) 25%, rgba(216,201,241,1) 94%); */
+  background-image: url('chair.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
+
 video {
-  max-width: 200%;
-  max-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,54 +105,23 @@ a:active {
   text-shadow: 0px 0px 10px #ff0000, 0px 0px 20px blue;
 }
 
-
-
-
-
-/* #hov {
-    width: 30%;
-    height: 30%;
-    background-size: cover;
-    background-color: pink;
-    padding: 1em;
-    margin: auto;
+.vimeo-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 200%;
+   height: 200%;
+   z-index: -1;
+   pointer-events: none;
+   overflow: hidden;
 }
-
- #BG {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: 30em;
-} */
-
-
-
-/*
-body{
-		margin: 2%;
-		border: 1px solid black;
-		background-color: #b3b3b3;
+.vimeo-wrapper iframe {
+   width: 100vw;
+   height: 100vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   min-height: 100vh;
+   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
-#image{
-    line-height:650px;
-		width: 575px;
-    height: 650px;
-		border:5px solid black;
-		margin:0 auto;
-    background-color: #8e68ff;
-    background-image: url('');
-    background-repeat: no-repeat;
-    color:#FFFFFF;
-    text-align: center;
-    background-size: 100%;
-    margin-bottom:25px;
-    font-size: 150%;
-}
-.preview{
-		width:10%;
-		margin-left:17%;
-    border: 10px solid black;
-}
-img{
-		width:95%;
-} */
