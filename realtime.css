@@ -1,0 +1,23 @@
+[data-letter] {
+	position: relative;
+	white-space: pre;
+	overflow: hidden;
+	font-size: 10px;
+	/* font-size:0.8vw; */
+	line-height: 10px;
+	font-family: monospace;
+	padding: 0;
+	color: red;
+	/* color: rgb(144, 70, 249); */
+}
+body {
+	background: black;
+}
+
+marquee{
+	padding-top: 500px;
+	font-family: monospace;
+	padding: 0;
+	color: limegreen;
+	font-size: 18px;
+}
